@@ -1,3 +1,0 @@
-int base;
-
-class 
