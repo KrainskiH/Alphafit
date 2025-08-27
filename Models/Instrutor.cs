@@ -8,12 +8,16 @@ public class Instrutor
 
     public Instrutor(string nome, string especialidade)
     {
-        if (string.IsNullOrWhiteSpace(nome)) throw new ArgumentException("Nome é obrigatório.");
+        if (string.IsNullOrWhiteSpace(nome))
+            throw new ArgumentException("Nome é obrigatório.");
+
         Nome = nome.Trim();
-        Especialidade = string.IsNullOrWhiteSpace(especialidade) ? "Geral" : especialidade.Trim();
+        Especialidade = string.IsNullOrWhiteSpace(especialidade)
+            ? "Geral"
+            : especialidade.Trim();
     }
 
-    // Exemplo de função que retorna um objeto (separação de responsabilidades)
-    public Treino CriarTreino(string nomeTreino, NivelTreino nivel, IEnumerable<string> exercicios)
+    // Fábrica de treinos (separação de responsabilidades)
+    public Treino CriarTreino(string nomeTreino, NivelTreino nivel, IEnumerable<string>? exercicios = null)
         => new Treino(nomeTreino, nivel, this, exercicios);
 }

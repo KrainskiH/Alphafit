@@ -1,6 +1,6 @@
 namespace AlphaFit.Models;
 
-// Tipos enumerados (enum) + extensão com preço do plano
+// Enum dos planos + extensão com preço mensal (ajuda nas estatísticas)
 public enum Plano
 {
     Basico = 1,
