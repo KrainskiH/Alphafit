@@ -1,0 +1,15 @@
+C:\Users\LUCASFARIAS\Desktop\Alphafit-main\Alphafit\bin\Debug\net8.0\Alphafit.exe
+C:\Users\LUCASFARIAS\Desktop\Alphafit-main\Alphafit\bin\Debug\net8.0\Alphafit.deps.json
+C:\Users\LUCASFARIAS\Desktop\Alphafit-main\Alphafit\bin\Debug\net8.0\Alphafit.runtimeconfig.json
+C:\Users\LUCASFARIAS\Desktop\Alphafit-main\Alphafit\bin\Debug\net8.0\Alphafit.dll
+C:\Users\LUCASFARIAS\Desktop\Alphafit-main\Alphafit\bin\Debug\net8.0\Alphafit.pdb
+C:\Users\LUCASFARIAS\Desktop\Alphafit-main\Alphafit\obj\Debug\net8.0\Alphafit.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LUCASFARIAS\Desktop\Alphafit-main\Alphafit\obj\Debug\net8.0\Alphafit.AssemblyInfoInputs.cache
+C:\Users\LUCASFARIAS\Desktop\Alphafit-main\Alphafit\obj\Debug\net8.0\Alphafit.AssemblyInfo.cs
+C:\Users\LUCASFARIAS\Desktop\Alphafit-main\Alphafit\obj\Debug\net8.0\Alphafit.csproj.CoreCompileInputs.cache
+C:\Users\LUCASFARIAS\Desktop\Alphafit-main\Alphafit\obj\Debug\net8.0\Alphafit.sourcelink.json
+C:\Users\LUCASFARIAS\Desktop\Alphafit-main\Alphafit\obj\Debug\net8.0\Alphafit.dll
+C:\Users\LUCASFARIAS\Desktop\Alphafit-main\Alphafit\obj\Debug\net8.0\refint\Alphafit.dll
+C:\Users\LUCASFARIAS\Desktop\Alphafit-main\Alphafit\obj\Debug\net8.0\Alphafit.pdb
+C:\Users\LUCASFARIAS\Desktop\Alphafit-main\Alphafit\obj\Debug\net8.0\Alphafit.genruntimeconfig.cache
+C:\Users\LUCASFARIAS\Desktop\Alphafit-main\Alphafit\obj\Debug\net8.0\ref\Alphafit.dll
