@@ -3,38 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AlphaFit</title>
+  <title>AlphaFit | Transforme seu corpo e sua mente</title>
   <link href="/Front-end/css/style.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- HEADER -->
   <header>
-    <h1>AlphaFit</h1>
-    <nav>
+    <h1>AlphaFit |</h1>
+    <p>O seu melhor jeito de malhar</p>
+    <button id="menu-toggle" >☰</button>
+    <nav id="side-menu">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="sobre.html">Sobre | Conheça mais sobre a Alphafit!</a></li>
         <li><a href="services.html">Serviços</a></li>
         <li><a href="contact.html">Contato</a></li>
       </ul>
     </nav>
   </header>
+  <div id="overlay"> </div>
 
   <!-- HERO -->
   <section class="hero">
     <h2>Transforme seu corpo e sua mente</h2>
-    <p>Treinos inteligentes, ambiente premium e tudo o que você precisa para alcançar seus objetivos fitness.</p>
+    <p>Treinos inteligentes, ambiente premium e tudo o que você precisa para alcançar seus objetivos fitness.
+        <br>Conheça nossos planos! <br>No primeiro mês pague apenas: <br><span id="valor">R$59,90</span></p>
     <a href="contact.html" class="btn">Comece Agora</a>
   </section>
 
-  <section class="sobre">
-    <h2>Sobre a AlphaFit</h2>
-    <p>Na AlphaFit, você encontra uma academia completa e sofisticada, feita para oferecer conforto, exclusividade e resultados. Nossa equipe de profissionais qualificados está pronta para acompanhar cada passo da sua evolução.</p>
 
-    <p> Com uma infraestrutura moderna, oferecemos uma variedade de equipamentos de última geração, aulas coletivas dinâmicas e serviços adicionais como sauna, hidro, massagem e um bar de shakes proteicos para potencializar seus resultados.</p>
-    <p>Venha fazer parte da AlphaFit e descubra uma nova forma de viver o fitness, com foco no seu bem-estar e na sua satisfação.</p>
-  </section>
 
   <section class="cards">
     <h2>Nossos Serviços e Facilidades</h2>
@@ -42,32 +43,32 @@
       <div class="card">
         <img src="/Front-end/img/instrutores.jfif" alt="Instrutores">
         <h3>Instrutores Qualificados</h3>
-        <p>Nossos profissionais são certificados e especializados para guiar você em treinos seguros e eficientes.</p>
+        <p> Profissionais certificados e especializados para treinos seguros e eficientes.</p>
       </div>
       <div class="card">
         <img src="/Front-end/img/exercicios.jfif" alt="Exercícios Diversificados">
         <h3>Exercícios Diversificados</h3>
-        <p>Treinos variados com pesos, esteiras, bicicletas e aulas coletivas para todas as modalidades.</p>
+        <p>Treinos variados para todas as modalidades.</p>
       </div>
       <div class="card">
         <img src="/Front-end/img/hidro.jfif" alt="Sauna e Hidro">
         <h3>Sauna, Hidro e Piscina</h3>
-        <p>Área de relaxamento completa para você recuperar energia após os treinos.</p>
+        <p>Área de relaxamento completa..</p>
       </div>
       <div class="card">
         <img src="/Front-end/img/massagem.jfif" alt="Massagem e Bem-estar">
         <h3>Massagem e Bem-estar</h3>
-        <p>Serviços de massagem para recuperação muscular e bem-estar total.</p>
+        <p>Serviços de massagem para recuperação muscular.</p>
       </div>
       <div class="card">
-        <img src="/Front-end/img/banheiros.jfif" alt="Banheiros e Guarda-volumes">
+        <img src="/Front-end/img/banheiros.webp" alt="Banheiros e Guarda-volumes">
         <h3>Banheiros Privativos & Guarda-volumes</h3>
-        <p>Conforto e privacidade garantidos em todas as áreas da academia.</p>
+        <p>Conforto e privacidade garantidos.</p>
       </div>
       <div class="card">
         <img src="/Front-end/img/proteinbar.jfif" alt="Bar de Shakes">
         <h3>Bar de Shakes Proteicos</h3>
-        <p>Peça shakes, creatina e whey diretamente no nosso bar para potencializar seus resultados.</p>
+        <p>Peça shakes diretamente no nosso bar.</p>
       </div>
     </div>
   </section>
@@ -94,6 +95,14 @@
     </div>
   </section>
 
+    <section class="sobre">
+    <h2>Sobre a AlphaFit</h2>
+    <p> Na AlphaFit, você encontra uma academia completa e sofisticada, feita para oferecer conforto, exclusividade e resultados. Nossa equipe de profissionais qualificados está pronta para acompanhar cada passo da sua evolução.</p>
+
+    <p> Com uma infraestrutura moderna, oferecemos uma variedade de equipamentos de última geração, aulas coletivas dinâmicas e serviços adicionais como sauna, hidro, massagem e um bar de shakes proteicos para potencializar seus resultados.</p>
+    <p> Venha fazer parte da AlphaFit e descubra uma nova forma de viver o fitness, com foco no seu bem-estar e na sua satisfação.</p>
+  </section>
+
   <section class="cta">
     <h2>Pronto para mudar sua vida?</h2>
     <p>Venha para AlphaFit e descubra a experiência premium que vai transformar seus treinos e seu bem-estar.</p>
@@ -104,6 +113,6 @@
   <footer>
     <p>&copy; 2025 AlphaFit. Todos os direitos reservados.</p>
   </footer>
-
+ <script src="/Front-end/js/java.js" defer></script>
 </body>
 </html>
