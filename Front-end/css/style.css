@@ -74,6 +74,7 @@ header p {
 }
 
 #side-menu.active {
+  color: #ccc;
   right: 0; /* aparece */
 }
 
@@ -103,8 +104,9 @@ header p {
 
 }
 #side-menu ul li a:hover {
-  color: #4137d4;
-  background-color: #1a2a4d;
+  text-shadow: 0 0 3px (0,0,0,0.3)#040404;
+  color: #ffffff;
+  background-color: #073caf;
 
 }
 
