@@ -15,10 +15,8 @@ body {
 
 /* HEADER */
 header {
-  position: fixed;
   top: 0;
   z-index: 1000;     /* fica acima do conteúdo */
-  padding: 10px 20px;
   background: #0808ca;
   padding: 9px;
   border-bottom: 2px solid #e5e4ee;
@@ -69,7 +67,7 @@ header p {
   color: white;
   transition: right 0.4s ease;
   padding: 20px;
-  z-index: 1001;
+  z-index: 2000;
   box-shadow: -2px 0 5px rgba(0,0,0,0.5);
   border-radius: 8px 0 0 8px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -108,23 +106,6 @@ header p {
   color: #4137d4;
   background-color: #1a2a4d;
 
-}
-
-/* fundo escuro */
-#overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(35, 33, 43, 0.5);
-  display: none;
-  z-index: 1000;
-
-}
-
-#overlay.active {
-  display: block;
 }
 
 /* HERO */
@@ -287,8 +268,9 @@ main section h2 {
 
 .cardinstrutor h3 {
   margin: 15px 0;
-  color: #4137d4;
-  font-size: 22px;
+  color: #efeff3;
+  font-size: 27px;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .cardinstrutor p {
@@ -331,7 +313,7 @@ section.sobre h2 {
 }
 .cta {
   text-align: center;
-  padding: 80px 20px;
+  padding: 40px 20px;
   background: #0808ca;
   color: #fff;
   font-family: "Bebas Neue", sans-serif;
@@ -340,11 +322,25 @@ section.sobre h2 {
 .cta h2 {
   margin-bottom: 25px;
   font-size: 30px;
-  color: #b3b3b7;
+  color: #dedee0;
   font-family: "Bebas Neue", sans-serif;
+}
+.cta p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #d1d1d1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cta .btn {
+  background: #ffbb00;
+  color: #111;
+  font-size: 20px;
+  padding: 16px 32px;
+  box-shadow: 0 4px 15px rgba(255,204,0,0.5);
 }
 
 footer {
+  width: 100%;
   font-family: "Bebas Neue", sans-serif;
   text-align: left;
   padding: 25px 20px;
