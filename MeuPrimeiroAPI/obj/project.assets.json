@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\henri\\MeuPrimeiroAPI\\MeuPrimeiroAPI.csproj",
+      "projectUniqueName": "C:\\Users\\henri\\OneDrive\\Documentos\\Faculdade\\Alphafit\\Alphafit\\MeuPrimeiroAPI\\MeuPrimeiroAPI.csproj",
       "projectName": "MeuPrimeiroAPI",
-      "projectPath": "C:\\Users\\henri\\MeuPrimeiroAPI\\MeuPrimeiroAPI.csproj",
+      "projectPath": "C:\\Users\\henri\\OneDrive\\Documentos\\Faculdade\\Alphafit\\Alphafit\\MeuPrimeiroAPI\\MeuPrimeiroAPI.csproj",
       "packagesPath": "C:\\Users\\henri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\henri\\MeuPrimeiroAPI\\obj\\",
+      "outputPath": "C:\\Users\\henri\\OneDrive\\Documentos\\Faculdade\\Alphafit\\Alphafit\\MeuPrimeiroAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\henri\\AppData\\Roaming\\NuGet\\NuGet.Config"
