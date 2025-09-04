@@ -94,6 +94,7 @@ header p {
 }
 
 #side-menu ul li a {
+  text-shadow: 0 0 3px (0,0,0,0.3)#040404;
   text-decoration: none;
   color: rgb(255, 252, 252);
   font-size: 20px;
@@ -388,10 +389,11 @@ footer p {
   margin: 10px 0;
 }
 .plano ul {
-  
+  color: #000000;
 }
 
 .plano ul li {
+  color: #000000;
 }
 
 .services-hero{
