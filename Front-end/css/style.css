@@ -353,6 +353,47 @@ footer p {
   color: #ccc;
   font-size: 14px;
 }
+<<<<<<< HEAD
+/*planos*/
+.planos {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+.container-planos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.plano {
+  background-color: white;
+  padding: 100px;
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+.plano:hover {
+  transform: scale(1.03);
+}
+.plano h3 {
+  font-size: 30px;
+  color: #000000;
+}
+.preco {
+  font-size: 25px;
+  color: #444444;
+  margin: 10px 0;
+}
+.plano ul {
+  
+}
+
+.plano ul li {
+
+=======
 
 .services-hero{
   background:#0808ca;
@@ -454,5 +495,6 @@ footer p {
 
 #tabelaAlunos tr:nth-child(even) {
   background: #f9f9f9;
+>>>>>>> 757acde9d27a89176abfa63f62fdbe752dece07d
 }
 
