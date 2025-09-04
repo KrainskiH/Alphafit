@@ -353,7 +353,7 @@ footer p {
   color: #ccc;
   font-size: 14px;
 }
-<<<<<<< HEAD
+/* HEAD
 /*planos*/
 .planos {
   text-align: center;
@@ -392,8 +392,7 @@ footer p {
 }
 
 .plano ul li {
-
-=======
+}
 
 .services-hero{
   background:#0808ca;
@@ -495,6 +494,6 @@ footer p {
 
 #tabelaAlunos tr:nth-child(even) {
   background: #f9f9f9;
->>>>>>> 757acde9d27a89176abfa63f62fdbe752dece07d
+/* 757acde9d27a89176abfa63f62fdbe752dece07d */
 }
 
