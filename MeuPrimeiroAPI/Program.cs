@@ -131,3 +131,26 @@ public record AlunoDto(string Nome, string Email, Plano? Plano);
 public record AtualizarAlunoDto(string? Nome, Plano? Plano);
 public record InstrutorDto(string Nome, string Especialidade);
 public record CriarTreinoDto(string Nome, NivelTreino Nivel, string InstrutorNome, string[]? Exercicios);
+
+/*codigo criação do banco*/
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        using var contexto = new MeuDbContext();
+
+        // Criar um usuário
+        var usuario = new Usuario { Nome = "João", Email = "joao@example.com" };
+        contexto.Usuarios.Add(usuario);
+        contexto.SaveChanges();
+
+        // Buscar todos os usuários
+        var usuarios = contexto.Usuarios.ToList();
+        foreach (var u in usuarios)
+        {
+            Console.WriteLine($"{u.Id}: {u.Nome} - {u.Email}");
+        }
+    }
+}
