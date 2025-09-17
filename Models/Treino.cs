@@ -1,40 +1,38 @@
 namespace AlphaFit.Models;
 
-// Outro enum usado no menu da aula 27
-public enum NivelTreino
-{
-    Iniciante = 1,
-    Intermediario = 2,
-    Avancado = 3
-}
+public enum NivelTreino { Iniciante, Intermediario, Avancado }
 
 public class Treino
 {
-    public Guid Id { get; private set; } = Guid.NewGuid();
-    public string Nome { get; private set; }
-    public NivelTreino Nivel { get; private set; }
-    public List<string> Exercicios { get; } = new();
-    public Instrutor Responsavel { get; }
+    public Guid Id { get; set; } = Guid.NewGuid();
+    public string Nome { get; set; } = default!;
+    public NivelTreino Nivel { get; set; }
 
-    public Treino(string nome, NivelTreino nivel, Instrutor responsavel, IEnumerable<string>? exerciciosIniciais = null)
+    // Relacionamento com Instrutor
+    public Guid InstrutorId { get; set; }
+    public Instrutor? Responsavel { get; set; }
+
+    // Coleção mapeável pelo EF
+    public List<Exercicio> Exercicios { get; set; } = new();
+
+    // ⚠️ Construtor sem parâmetros para o EF
+    public Treino() { }
+
+    // Construtor de conveniência para seu domínio (opcional)
+    public Treino(string nome, NivelTreino nivel, Instrutor responsavel, IEnumerable<string> exerciciosIniciais)
     {
-        if (string.IsNullOrWhiteSpace(nome))
-            throw new ArgumentException("Nome do treino é obrigatório.");
-
-        Nome = nome.Trim();
+        Nome = nome;
         Nivel = nivel;
-        Responsavel = responsavel ?? throw new ArgumentNullException(nameof(responsavel));
-
-        if (exerciciosIniciais is not null)
-            Exercicios.AddRange(exerciciosIniciais);
+        Responsavel = responsavel;
+        InstrutorId = responsavel.Id;
+        if (exerciciosIniciais != null)
+            Exercicios = exerciciosIniciais.Select(e => new Exercicio(e)).ToList();
     }
 
-    public void AdicionarExercicio(string descricao)
+    public void AdicionarExercicio(string nome)
     {
-        if (!string.IsNullOrWhiteSpace(descricao))
-            Exercicios.Add(descricao.Trim());
+        Exercicios.Add(new Exercicio(nome));
     }
 
-    public override string ToString()
-        => $"{Nome} ({Nivel}) • {Exercicios.Count} exercícios • Instrutor: {Responsavel.Nome}";
+    public override string ToString() => $"{Nome} ({Nivel}) - {Exercicios.Count} exercícios";
 }
