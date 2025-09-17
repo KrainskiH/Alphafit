@@ -2,22 +2,17 @@ namespace AlphaFit.Models;
 
 public class Instrutor
 {
-    public Guid Id { get; private set; } = Guid.NewGuid();
-    public string Nome { get; set; }
-    public string Especialidade { get; set; }
+    public Guid Id { get; set; } = Guid.NewGuid();
+    public string Nome { get; set; } = default!;
+    public string Especialidade { get; set; } = default!;
 
+    public Instrutor() { }
     public Instrutor(string nome, string especialidade)
     {
-        if (string.IsNullOrWhiteSpace(nome))
-            throw new ArgumentException("Nome é obrigatório.");
-
-        Nome = nome.Trim();
-        Especialidade = string.IsNullOrWhiteSpace(especialidade)
-            ? "Geral"
-            : especialidade.Trim();
+        Nome = nome;
+        Especialidade = especialidade;
     }
 
-    // Fábrica de treinos (separação de responsabilidades)
-    public Treino CriarTreino(string nomeTreino, NivelTreino nivel, IEnumerable<string>? exercicios = null)
-        => new Treino(nomeTreino, nivel, this, exercicios);
+    public Treino CriarTreino(string nome, NivelTreino nivel, IEnumerable<string> exercicios)
+        => new Treino(nome, nivel, this, exercicios);
 }
