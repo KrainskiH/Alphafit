@@ -7,7 +7,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
   
   body {
-    background:#e0e0e0;
+    background:#0B0C10;
     font-family: 'Montserrat', sans-serif;
     color: #f5f5f5;
     line-height: 1.6;
@@ -18,7 +18,7 @@
     z-index: 1000;     /* fica acima do conteúdo */
     background: #000f14;
     padding: 9px;
-    border-bottom: 5px solid #004e64;
+    border-bottom: 5px solid #9b0707;
     display: flex;
     align-items: center;
     position: sticky;
@@ -162,7 +162,7 @@ input, select {
 }
 
 .botao-assinar:hover {
-  background-color: #004e64;
+  background-color: #9b0707;
   box-shadow: 0 6px 15px rgba(3, 57, 172, 0.9);
   text-decoration: none;
 }

@@ -18,7 +18,7 @@
     z-index: 1000;     /* fica acima do conteúdo */
     background: #000f14;
     padding: 9px;
-    border-bottom: 5px solid #004e64;
+    border-bottom: 5px solid #9b0707;
     display: flex;
     align-items: center;
     position: sticky;
@@ -113,7 +113,7 @@
 .planos {
     text-align: center;
     padding: 50px 20px;
-    background-color: white;
+    background-color:#0B0C10;
   }
   .container-planos {
     display: flex;
@@ -134,7 +134,7 @@
     transform: scale(1.03);
   }
   .planos h2 {
-    color: #000000;
+    color: #ffffff;
     font-size: 30px;
     margin-bottom: 20px;
   }
@@ -185,7 +185,7 @@
   }
   
 .btn:hover {
-  background-color: #004e64;
+  background-color: #9b0707;
   box-shadow: 0 6px 15px rgba(3, 57, 172, 0.9);
   text-decoration: none;
 }
