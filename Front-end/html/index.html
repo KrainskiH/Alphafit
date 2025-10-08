@@ -13,30 +13,51 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Bebas+Neue&display=swap" rel="stylesheet">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
   <!-- Ícone -->
   <link rel="icon" type="image/png" href="../img/apple-touch-icon.png">
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
+ <header>
+  <div class="logo">
     <h1>AlphaFit |</h1>
     <p>O seu melhor jeito de malhar</p>
-    <button id="menu-toggle" >☰</button>
-    <div id="overlay"> </div>
-    <nav id="side-menu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="sobre.html">Sobre | Conheça mais sobre a Alphafit!</a></li>
-        <li><a href="services.html">Serviços</a></li>
-        <li><a href="planos.html">Planos</a></li>
-      </ul>
-    </nav>
-  </header>
+  </div>
+
+  <!-- Menu fixo desktop -->
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="services.html">Serviços</a></li>
+      <li><a href="planos.html">Planos</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Botão mobile -->
+  <button id="menu-toggle">☰</button>
+</header>
+
+<!-- Menu lateral mobile -->
+<nav id="side-menu">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="services.html">Serviços</a></li>
+    <li><a href="planos.html">Planos</a></li>
+    <li><a href="contato.html">Contato</a></li>
+  </ul>
+</nav>
+<div id="overlay"></div>
 
 
   <section class="sobre">
-    <h2> Bem-vindo à AlphaFit </h2>
+    <h2> Bem-vindos a academia AlphaFit </h2>
     <p> Sua jornada fitness começa aqui! Na AlphaFit, oferecemos uma experiência de academia premium, combinando tecnologia de ponta, treinos personalizados e um ambiente sofisticado para você alcançar seus objetivos com conforto e exclusividade. </p>
   </section>
   <!-- HERO -->
