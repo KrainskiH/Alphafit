@@ -1,0 +1,80 @@
+/**/
+.planos {
+    text-align: center;
+    padding: 50px 20px;
+    background-color:#0B0C10;
+  }
+  .container-planos {
+    display: flex;
+    justify-content: center;
+    gap:60px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .plano {
+    background-color: rgb(209, 206, 206);
+    padding: 100px 30px;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 4px 12px rgba(0, 0, 0.692);
+    transition: transform 0.2s;
+  }
+  .plano:hover {
+    transform: scale(1.03);
+  }
+  .planos h2 {
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .plano h3 {
+    font-size: 30px;
+    color: #000000;
+  }
+  .preco {
+    font-size: 23px;
+    color: #000000;
+    margin: 10px 0;
+  }
+  .plano ul {
+  list-style-type: disc;
+  padding-left: 0px;  
+  margin-top: 15px;
+  color: #000000; 
+  font-size: 16px;
+  line-height: 2.0;
+}
+
+.plano ul li {
+  margin-bottom: 20px; 
+  color: #000000;
+}
+
+.btn {
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  padding: 10px 40px;
+  background: #000000;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.7);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.10s ease, box-shadow 0.10s ease;
+  display: block;
+  margin: 20px auto 0;
+  text-align: center;
+  text-decoration: none;
+  -webkit-appearance: none; /* remove aparência padrão no Safari */
+  -moz-appearance: none;    /* remove aparência padrão no Firefox */
+  appearance: none;         /* remove aparência padrão em geral */
+    width: 140px; /* ou o valor que quiser */
+    box-sizing: border-box; /* para garantir o padding dentro da largura */
+  }
+  
+.btn:hover {
+  background-color: #9b0707;
+  box-shadow: 0 6px 15px rgba(3, 57, 172, 0.9);
+  text-decoration: none;
+}
