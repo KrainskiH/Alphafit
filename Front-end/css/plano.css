@@ -16,9 +16,9 @@
   header {
     top: 0;
     z-index: 1000;     /* fica acima do conteúdo */
-    background: #000f14;
+    background: #000000;
     padding: 9px;
-    border-bottom: 5px solid #9b0707;
+    border-bottom: 2px solid #9b0707;
     display: flex;
     align-items: center;
     position: sticky;
