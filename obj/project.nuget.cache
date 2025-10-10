@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yOxnUUqspSI=",
+  "dgSpecHash": "hrFEn7osBFM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\henri\\OneDrive\\Documentos\\Faculdade\\Alphafit\\AlphaFit\\Alphafit\\Alphafit.csproj",
+  "projectFilePath": "C:\\Users\\henri\\OneDrive\\Documentos\\Faculdade\\Body Academy\\Alphafit\\Alphafit.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\henri\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\henri\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

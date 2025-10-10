@@ -2569,11 +2569,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\henri\\OneDrive\\Documentos\\Faculdade\\Alphafit\\AlphaFit\\Alphafit\\Alphafit.csproj",
+      "projectUniqueName": "C:\\Users\\henri\\OneDrive\\Documentos\\Faculdade\\Body Academy\\Alphafit\\Alphafit.csproj",
       "projectName": "Alphafit",
-      "projectPath": "C:\\Users\\henri\\OneDrive\\Documentos\\Faculdade\\Alphafit\\AlphaFit\\Alphafit\\Alphafit.csproj",
+      "projectPath": "C:\\Users\\henri\\OneDrive\\Documentos\\Faculdade\\Body Academy\\Alphafit\\Alphafit.csproj",
       "packagesPath": "C:\\Users\\henri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\henri\\OneDrive\\Documentos\\Faculdade\\Alphafit\\AlphaFit\\Alphafit\\obj\\",
+      "outputPath": "C:\\Users\\henri\\OneDrive\\Documentos\\Faculdade\\Body Academy\\Alphafit\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\henri\\AppData\\Roaming\\NuGet\\NuGet.Config"

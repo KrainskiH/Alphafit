@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Alphafit")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb7c55dc902f000e8878e2f2034c59d790d7f6d1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+822c97ba9d71de78899e980d95250fe8a3f52821")]
 [assembly: System.Reflection.AssemblyProductAttribute("Alphafit")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Alphafit")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

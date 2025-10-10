@@ -37,3 +37,18 @@ window.addEventListener('resize', ()=>{
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 });
+
+const titulo = document.getElementById("TITULO");
+  let pos = 0;        // posição vertical
+  let dir = 1;        // direção (1 = sobe, -1 = desce)
+  const amplitude = 3; // altura do movimento (px)
+  const velocidade = 0.1; // velocidade da animação
+
+  function animar() {
+    pos += dir * velocidade;
+    if (pos > amplitude || pos < -amplitude) dir *= -1; // inverte o movimento
+    titulo.style.transform = `translateY(${pos}px)`;
+    requestAnimationFrame(animar); // loop suave
+  }
+
+  animar();
