@@ -6,7 +6,7 @@
   <title>AlphaFit | Serviços</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/main.css">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,21 +19,37 @@
 <body>
 
   <!-- HEADER -->
-  <header>    
-    <h1>AlphaFit</h1>
-    <p>O seu melhor jeito de malhar</p>
-    <button id="menu-toggle">☰</button>
-    <nav id="side-menu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="sobre.html">Sobre | Conheça mais sobre a Alphafit!</a></li>
-        <li><a href="services.html">Serviços</a></li>
-        <li><a href="planos.html">Planos</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div id="overlay"></div>
+  <header> 
+    <div class="logo">
+      <h1> AlphaFit</h1>
+      <h1 id="TITULO"> |</h1>
+      <p> Nossos serviços</p>
+    </div>
+      <!-- Menu fixo desktop -->
+<nav class="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="services.html">Serviços</a></li>
+      <li><a href="planos.html">Planos</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
 
+  <!-- Botão mobile -->
+  <button id="menu-toggle">☰</button>
+</header>
+<!-- Menu lateral mobile -->
+<nav id="side-menu">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="services.html">Serviços</a></li>
+    <li><a href="planos.html">Planos</a></li>
+    <li><a href="contato.html">Contato</a></li>
+  </ul>
+</nav>
+<div id="overlay"></div>
 <!-- HERO DE SERVIÇOS -->
 <section class="services-hero">
   <h1>NOSSOS SERVIÇOS E FACILIDADES</h1>
@@ -42,16 +58,7 @@
 <!-- GRID DE SERVIÇOS -->
 <section class="services-grid-wrapper">
   <div class="service-grid">
-    <!-- 1 -->
-    <article class="service-card">
-      <img class="service-thumb" src="../img/instrutor1.jfif" alt="Treino com instrutor">
-      <div class="service-body">
-        <h3>Instrutores Qualificados</h3>
-        <p>Profissionais certificados e especializados para treinos seguros e eficientes.</p>
-      </div>
-    </article>
-
-    <!-- 2 -->
+    
     <article class="service-card">
       <img class="service-thumb" src="../img/exercicios.jfif" alt="Halteres e equipamentos">
       <div class="service-body">

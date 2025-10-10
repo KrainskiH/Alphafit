@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AlphaFit | Cadastre-se</title>
-  <link rel="stylesheet" href="../css/cadastro.css">
+
+
+  <link rel="stylesheet" href="../css/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -12,19 +14,36 @@
 </head>
 <body>
   <header> 
-    <h1>Formulário de Cadastro</h1>
-    <button id="menu-toggle">☰</button>
-    <nav id="side-menu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="sobre.html">Sobre | Conheça mais sobre a Alphafit!</a></li>
-        <li><a href="services.html">Serviços</a></li>
-        <li><a href="planos.html">Planos</a></li>
-      </ul>
-    </nav>
-  </header>
+    <div class="logo">
+      <h1> AlphaFit</h1>
+      <h1 id="TITULO"> |</h1>
+      <p>Formulário de cadastro</p>
+    </div>
+      <!-- Menu fixo desktop -->
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="services.html">Serviços</a></li>
+      <li><a href="planos.html">Planos</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
 
-  <div id="overlay"></div>
+  <!-- Botão mobile -->
+  <button id="menu-toggle">☰</button>
+</header>
+<!-- Menu lateral mobile -->
+<nav id="side-menu">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="services.html">Serviços</a></li>
+    <li><a href="planos.html">Planos</a></li>
+    <li><a href="contato.html">Contato</a></li>
+  </ul>
+</nav>
+<div id="overlay"></div>
 
   <section id="cadastro">
     <form id="form-cadastro">

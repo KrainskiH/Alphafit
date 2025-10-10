@@ -1,6 +1,7 @@
 /* Base */
 @import url('base/reset.css');
 @import url('base/fonts.css');
+@import url('base/variables.css');
 
 /* Layout */
 @import url('layout/header.css');
@@ -16,3 +17,4 @@
 @import url('pages/sobre.css');
 @import url('pages/services.css');
 @import url('pages/plano.css');
+@import url('pages/cadastro.css');

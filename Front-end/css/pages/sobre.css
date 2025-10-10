@@ -25,4 +25,21 @@ section.sobre {
     font-weight: 400;
     font-style: normal;
   }
-  
+  .cta { 
+    text-align: center; 
+    padding: 40px 20px; 
+    color: #F5F7FA; } 
+
+  .cta h2 { 
+    margin-bottom: 25px; 
+    font-size: 30px; 
+    color: #F5F7FA; 
+    font-family:"BBH Sans Hegarty", sans-serif; 
+    font-weight: 400; 
+    font-style: normal; } 
+    
+  .cta p { 
+    font-size: 20px; 
+    margin-bottom: 30px; 
+    color: #F5F7FA; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }
