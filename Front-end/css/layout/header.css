@@ -8,8 +8,36 @@ header {
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 15px rgba(0,0,0,0.25);
-  transition: background 0.3s, box-shadow 0.3s;
+  transition: all 0.4s ease;
   border-bottom: 2px solid #ff0000;}
+
+  /* Quando o header rola pra baixo */
+header.scrolled {
+  padding: 8px 25px;
+  background: rgba(0,0,0,0.9);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+  backdrop-filter: blur(5px);
+  transform: translateY(0);
+}
+
+header.scrolled .logo h1 {
+  font-size: 22px;
+  text-shadow: 0 0 4px #ff0000;
+  transition: all 0.3s ease;
+}
+
+header.scrolled .logo p {
+  font-size: 12px;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+/* Efeito no #TITULO também */
+header.scrolled #TITULO {
+  color: #ff3333;
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+}
 
 #TITULO{
   color:#ff0000;}
