@@ -53,11 +53,13 @@ const titulo = document.getElementById("TITULO");
 
   animar();
 
-  window.addEventListener("scroll", () => {
-  const header = document.querySelector("header");
-  if (window.scrollY > 50) {
-    header.classList.add("scrolled");
-  } else {
-    header.classList.remove("scrolled");
-  }
-});
+  window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    const scrollY = window.scrollY;
+  
+    if (scrollY > 10) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
