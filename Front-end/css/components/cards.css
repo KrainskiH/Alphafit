@@ -17,7 +17,7 @@
   /* CARD DE SERVIÇO */
 .card {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    background: #111;
+    background: #ffffff;
     border-radius: 10px;
     overflow: hidden;
     width: 300px;
@@ -33,22 +33,22 @@
   }
   
   .card h3 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     margin: 15px 0;
-    color: #F5F7FA;
-    font-size: 20px;
+    color: #242424;
+    font-size: 30px;
   }
   
   .card p {
     font-family: Arial, Helvetica, sans-serif;
     padding: 15px 20px 20px;
-    color: #F5F7FA;
+    color: #000000;
     font-size: 16px;
   }
   
   /* CARD DE INSTRUTOR */
   .cardinstrutor {
-    background: #111;
+    background: #ffffff;
     border-radius: 12px;
     overflow: hidden;
     width: 300px;
@@ -67,15 +67,17 @@
   
   .cardinstrutor h3 {
     margin: 15px 0;
-    color: #F5F7FA;
+    color: #242424;
     font-size: 27px;
     font-family: "Bebas Neue", sans-serif;
   }
   
   .cardinstrutor p {
     padding: 0 15px 20px;
-    color: #F5F7FA;
+    color: #222222;
     font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:initial;
   }
   
   /* CARD DE SERVIÇO GRID */
