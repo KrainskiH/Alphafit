@@ -6,7 +6,7 @@
   <title>AlphaFit | Planos</title>
 
   <link rel="stylesheet" href="../css/main.css">
-
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -29,6 +29,7 @@
   <!-- Botão mobile -->
   <button id="menu-toggle">☰</button>
 </header>
+
 <!-- Menu lateral mobile -->
 <nav id="side-menu">
   <ul>
@@ -41,6 +42,7 @@
 </nav>
 <div id="overlay"></div>
 <body>
+    <canvas id="bg"></canvas>
     <section class="planos"> 
   <h1>Escolha seu Plano</h1>
   <div class="container-planos">
@@ -50,11 +52,11 @@
       <ul>      
       <li data-disponivel="true">Acesso ilimitado a musculação.</li>
       <li data-disponivel="false"><span>Acesso ilimitado a todas as modalidades.</span></li>
-      <li data-disponivel="false"><span>Acesso ilimitado a todas as unidades Alphafit.</span></li>
+      <li data-disponivel="false"><span>Acesso ilimitado a todas as unidades B.A.</span></li>
       <li data-disponivel="true">Personais disponíveis na unidade.</li>
       <li data-disponivel="false"><span>Acesso a sauna e hidromassagem.</span></li>
       <li data-disponivel="true">1 avaliação física ou consulta inicial com personal trainer.</li>
-      <li data-disponivel="true">AlphaFit App.</li>
+      <li data-disponivel="true">B.A App.</li>
       <li data-disponivel="true">Treino padrão no app.</li>
       <li data-disponivel="true">Taxa de matrícula R$ 50,00.</li>
       </ul>
@@ -67,11 +69,11 @@
       <ul>
         <li data-disponivel="true">Acesso ilimitado a musculação.</li>
         <li data-disponivel="true">Acesso ilimitado a todas as modalidades.</li>
-        <li data-disponivel="true">Acesso ilimitado a todas as unidades Alphafit.</li>
+        <li data-disponivel="true">Acesso ilimitado a todas as unidades B.A.</li>
         <li data-disponivel="true">Personais disponíveis na unidade.</li>
         <li data-disponivel="false"><span>Acesso a sauna e hidromassagem.</span></li>
         <li data-disponivel="true">1 avaliações física para acompanhar o progresso.</li>
-        <li data-disponivel="true">AlphaFit App.</li>
+        <li data-disponivel="true">B.A App.</li>
         <li data-disponivel="true">Treino padrão no app.</li>
         <li data-disponivel="true">Taxa de matrícula R$35,00.</li>
       </ul>
@@ -83,10 +85,11 @@
       <ul>
         <li data-disponivel="true">Acesso ilimitado a musculação.</li>
         <li data-disponivel="true">Acesso ilimitado a todas as modalidades.</li>
+        <li data-disponivel="true">Acesso ilimitado a todas as unidades B.A.</li>
         <li data-disponivel="true">Personais disponíveis na unidade.</li>
         <li data-disponivel="true">Acesso a sauna e hidromassagem.</li>
         <li data-disponivel="true">Avaliações físicas periódicas (a cada 3 meses) acompanhamento contínuo de progresso.</li>
-        <li data-disponivel="true">AlphaFit App.</li>
+        <li data-disponivel="true">B.A App.</li>
         <li data-disponivel="true">Treino personalizado no app a cada avaliação.</li>
         <li data-disponivel="true">Sem taxa de matrícula.</li>
       </ul>
@@ -98,6 +101,7 @@
   <footer>
     <p>&copy; 2025 AlphaFit. Todos os direitos reservados.</p>
   </footer>
- <script src="/Front-end/js/java.js" defer></script>
+ <script src="../js/java.js" defer></script>
+ <script src="../js/main/js" defer></script>
 </body>
 </html>
