@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\henri\\OneDrive\\Documentos\\Faculdade\\Body Academy\\Alphafit\\Alphafit.csproj": {}
+    "C:\\Users\\henri\\OneDrive\\Documentos\\Faculdade\\Body Academy\\Alphafit\\BodyAction\\Alphafit.csproj": {}
   },
   "projects": {
-    "C:\\Users\\henri\\OneDrive\\Documentos\\Faculdade\\Body Academy\\Alphafit\\Alphafit.csproj": {
+    "C:\\Users\\henri\\OneDrive\\Documentos\\Faculdade\\Body Academy\\Alphafit\\BodyAction\\Alphafit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\henri\\OneDrive\\Documentos\\Faculdade\\Body Academy\\Alphafit\\Alphafit.csproj",
+        "projectUniqueName": "C:\\Users\\henri\\OneDrive\\Documentos\\Faculdade\\Body Academy\\Alphafit\\BodyAction\\Alphafit.csproj",
         "projectName": "Alphafit",
-        "projectPath": "C:\\Users\\henri\\OneDrive\\Documentos\\Faculdade\\Body Academy\\Alphafit\\Alphafit.csproj",
+        "projectPath": "C:\\Users\\henri\\OneDrive\\Documentos\\Faculdade\\Body Academy\\Alphafit\\BodyAction\\Alphafit.csproj",
         "packagesPath": "C:\\Users\\henri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\henri\\OneDrive\\Documentos\\Faculdade\\Body Academy\\Alphafit\\obj\\",
+        "outputPath": "C:\\Users\\henri\\OneDrive\\Documentos\\Faculdade\\Body Academy\\Alphafit\\BodyAction\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\henri\\AppData\\Roaming\\NuGet\\NuGet.Config"
