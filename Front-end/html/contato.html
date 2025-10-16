@@ -1,56 +1,222 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AlphaFit | Sobre Nós</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BodyAction | Fale Conosco</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/main.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Bebas+Neue&display=swap" rel="stylesheet"/>
+  <link rel="icon" type="image/png" href="../img/apple-touch-icon.png"/>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Bebas+Neue&display=swap" rel="stylesheet">
-  
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Bebas+Neue&display=swap" rel="stylesheet">
-
-  <!-- Ícone -->
-  <link rel="icon" type="image/png" href="../img/apple-touch-icon.png">
+  <!-- Ícones -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
-    
-    <header> 
-        <div class="logo">
-          <h1> AlphaFit</h1>
-          <h1 id="TITULO"> |</h1>
-          <p> Sobre a nossa academia</p>
-        </div>
-          <!-- Menu fixo desktop -->
+<body>
+
+  <header>
+    <div class="logo">
+      <h1 id="TITULO"> | B.A</h1>
+      <h1> Body <br>Action</h1>
+      <p id="DRAMA">Fale conosco</p>
+    </div>
+
     <nav class="main-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="services.html">Serviços</a></li>
-          <li><a href="planos.html">Planos</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-      </nav>
-    
-      <!-- Botão mobile -->
-      <button id="menu-toggle">☰</button>
-    </header>
-    <!-- Menu lateral mobile -->
-    <nav id="side-menu">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./sobre.html">Sobre</a></li>
+        <li><a href="./services.html">Serviços</a></li>
+        <li><a href="./planos.html">Planos</a></li>
+        <li><a href="./contato.html" class="ativo">Contato</a></li>
+      </ul>
+    </nav>
+    <button id="menu-toggle">☰</button>
+  </header>
+
+  <nav id="side-menu">
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./sobre.html">Sobre</a></li>
+      <li><a href="./services.html">Serviços</a></li>
+      <li><a href="./planos.html">Planos</a></li>
+      <li><a href="./contato.html">Contato</a></li>
+    </ul>
+  </nav>
+  <div id="overlay"></div>
+
+  <!-- topo -->
+  <section class="fc-hero">
+    <h1>Estamos aqui para ajudar</h1>
+    <p>Escolha um canal de atendimento ou envie sua mensagem pelo formulário.</p>
+  </section>
+
+  <div class="fc-wrap fc-grid">
+    <!-- Coluna principal -->
+    <section class="fc-card">
+      <h2>Formulário de Atendimento</h2>
+      <form id="form-contato" class="fc-form" novalidate>
+        <div class="row">
+          <div>
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto" required>
+              <option value="">Selecione</option>
+              <option value="duvida">Dúvida Geral</option>
+              <option value="plano">Planos e Preços</option>
+              <option value="matricula">Matrícula/Cancelamento</option>
+              <option value="financeiro">Financeiro</option>
+              <option value="lgpd">Dados pessoais (LGPD)</option>
+              <option value="outros">Outros</option>
+            </select>
+          </div>
+          <div>
+            <label for="unidade">Unidade</label>
+            <select id="unidade" name="unidade">
+              <option value="">Selecione (opcional)</option>
+              <option value="centro">Curitiba — Centro</option>
+              <option value="agua-verde">Curitiba — Água Verde</option>
+              <option value="batel">Curitiba — Batel</option>
+            </select>
+          </div>
+          <div>
+            <label for="nome">Nome completo</label>
+            <input id="nome" name="nome" type="text" required/>
+          </div>
+          <div>
+            <label for="telefone">Telefone (WhatsApp)</label>
+            <input id="telefone" name="telefone" type="tel" placeholder="(41) 9 9999-9999" required/>
+          </div>
+          <div>
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" required/>
+          </div>
+          <div>
+            <label for="cpf">CPF (opcional)</label>
+            <input id="cpf" name="cpf" type="text" inputmode="numeric" />
+          </div>
+          <div class="full">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+          </div>
+          <div class="full actions">
+            <label class="muted">
+              <input type="checkbox" id="lgpd" required/>
+              Autorizo o uso dos meus dados para retorno deste contato, conforme a <a href="#" target="_blank">Política de Privacidade</a>.
+            </label>
+          </div>
+          <div class="full actions">
+            <button type="submit" class="btn-primary">Enviar mensagem</button>
+            <span class="muted">Tempo médio de resposta: 1 dia útil</span>
+          </div>
+        </div>
+      </form>
+
+      <div class="faq" style="margin-top:18px">
+        <h3>Dúvidas frequentes</h3>
+        <details>
+          <summary>Como cancelar minha matrícula?</summary>
+          <p>Você pode solicitar pelo formulário (Assunto: “Matrícula/Cancelamento”) ou diretamente na recepção da sua unidade.</p>
+        </details>
+        <details>
+          <summary>Quais são as formas de pagamento?</summary>
+          <p>Cartão de crédito/débito e PIX. Planos semestrais/anuais podem ter condições especiais.</p>
+        </details>
+        <details>
+          <summary>Como falar com o financeiro?</summary>
+          <p>Use o assunto “Financeiro” no formulário ou o WhatsApp do atendimento.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Coluna lateral -->
+    <aside class="fc-aside fc-card">
+      <h3>Canais de Atendimento</h3>
+      <div class="fc-canals" style="margin-bottom:14px">
+        <div class="canal">
+          <i class="fa-brands fa-whatsapp"></i>
+          <div>
+            <a href="https://wa.me/5541999999999" target="_blank">WhatsApp</a>
+            <small>2ª a 6ª, 8h–20h</small>
+          </div>
+        </div>
+        <div class="canal">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <a href="tel:+5541999999999">(41) 99999-9999</a>
+            <small>Recepção — Unidade Centro</small>
+          </div>
+        </div>
+        <div class="canal">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <a href="mailto:contato@bodyaction.com.br">contato@bodyaction.com.br</a>
+            <small>Atendimento geral</small>
+          </div>
+        </div>
+        <div class="canal">
+          <i class="fa-solid fa-shield-halved"></i>
+          <div>
+            <a href="#" title="Solicitações de dados (LGPD)">Solicitação de Dados (LGPD)</a>
+            <small>Correção/Exclusão de dados</small>
+          </div>
+        </div>
+      </div>
+
+      <h3>Informações da Unidade</h3>
+      <ul class="list">
+        <li><strong>Endereço:</strong> Rua da Energia, 123 — Curitiba/PR</li>
+        <li><strong>Horário:</strong> Seg–Sex 06:00–23:00 • Sáb 08:00–18:00</li>
+        <li><span class="badge">Estacionamento</span> <span class="badge">Acessível</span> <span class="badge">Wi-Fi</span></li>
+      </ul>
+    </aside>
+  </div>
+
+  <!-- footer-->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2><span class="barra">|</span> <span class="ba">B.A</span> <br> BODY <br> ACTION</h2>
+      <p>Mais que uma academia, um estilo de vida. Treine corpo e mente com tecnologia e performance.</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Institucional</h3>
+      <ul>
+        <li><a href="sobre.html">Sobre Nós</a></li>
         <li><a href="services.html">Serviços</a></li>
         <li><a href="planos.html">Planos</a></li>
         <li><a href="contato.html">Contato</a></li>
       </ul>
-    </nav>
-    <div id="overlay"></div>
-<body>
+    </div>
+
+    <div class="footer-column">
+      <h3>Suporte</h3>
+      <ul>
+        <li><a href="#">Ajuda</a></li>
+        <li><a href="#">Política de Privacidade</a></li>
+        <li><a href="#">Termos e Condições</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Conecte-se</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+  <p class="footer-bottom">© 2025 BodyAction — Todos os direitos reservados.</p>
+</footer>
+
+<!-- Adicione o link do Font Awesome para os ícones -->
+<script src="https://kit.fontawesome.com/a2d04c6b0a.js" crossorigin="anonymous"></script>
+
+<script src="../js/java.js" defer></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

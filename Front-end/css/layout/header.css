@@ -29,7 +29,7 @@ header.scrolled #TITULO {
 header .logo h1, p {
   transition: font-size 1s ease;}
 
-header.scrolled .logo h1, p {
+header.scrolled .logo h1,p {
   font-size: 1.2rem; /* Tamanho menor do título quando a página rola */}
 
 #TITULO{
