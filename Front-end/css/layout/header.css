@@ -8,38 +8,21 @@ header {
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 15px rgba(0,0,0,0.25);
-  transition: padding 0.4s ease, background 0.4s ease, box-shadow 0.4s ease; /* Melhor controle de transições */
+  transition: padding 1s ease, background 1s ease, box-shadow 1s ease; /* Melhor controle de transições */
   border-bottom: 2px solid #ff0000;
-  min-height: 70px;
-}
+  min-height: 70px;}
 
-/* Quando o header rola para baixo */
 header.scrolled {
-  padding: 8px 20px;
-  background: rgba(0,0,0,0.9);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
-  
-  /* Removendo backdrop-filter para melhorar performance */
-}
+  padding:10px;}
 
-header.scrolled .logo h1 {
-  font-size: 22px;
+header.scrolled .logo{
   text-shadow: 0 0 4px #ff0000;
-  transition: font-size 0.4s ease, text-shadow 0.4s ease;
-}
+  transition: font-size 1s ease, text-shadow 1s ease;}
 
-header.scrolled .logo p {
-  font-size: 12px;
-  opacity: 0.7;
-  transition: font-size 0.4s ease, opacity 0.4s ease;
-}
-
-/* Efeito no #TITULO também */
 header.scrolled #TITULO {
-  color: #ff3333;
-  transform: scale(0.9);
-  transition: color 0.4s ease, transform 0.4s ease;
-}
+  transform: scale(1);
+  transition: color 1s ease, transform 1s ease;}
+
 #TITULO{
   color:#ff0000;}
 
@@ -51,7 +34,6 @@ header.scrolled #TITULO {
   color: #ff0000;}
 
 .logo {
-
   display:flex;
   align-items:center;
   gap:10px;}
@@ -59,7 +41,7 @@ header.scrolled #TITULO {
 .logo h1 {
   font-family:"Bebas Neue", sans-serif;
   color:#f5f5f5;
-  font-size:32px;
+  font-size:29px;
   text-shadow:2px 2px 5px rgba(0,0,0,0.5);}
 
 .logo p {
@@ -76,27 +58,16 @@ header::after {
   border: 2px solid #ff0000;
   border-radius: 3px;
   opacity: 0;
-  transition: all 0.4s ease;
-  pointer-events: none; /* evita atrapalhar o hover */
-}
+  transition: all 1s ease;
+  pointer-events: none;}
+
 header:hover h1 {
   text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
-  transform: scale(1.05);
-}
+  transform: scale(1.05);}
+  
 header:hover::after {
   opacity: 1;
-  box-shadow: 0 0 15px #ff0000;
-}
-/* ===== ANIMAÇÕES ===== */
-@keyframes aparecer {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes flutuar {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-3px); }
-}
+  box-shadow: 0 0 15px #ff0000;}
 
 /* MENU FIXO DESKTOP */
 .main-nav ul {
