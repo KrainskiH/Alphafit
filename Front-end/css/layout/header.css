@@ -190,3 +190,7 @@ header:hover::after {
   background-color: rgba(0,0,0,0.5);
   z-index: 1000;
   backdrop-filter: blur(2px);}
+
+  .logoo img {
+    width:40px;
+    height:auto;}
