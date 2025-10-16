@@ -30,4 +30,3 @@ prev.addEventListener('click', () => {
   index = (index - 1 + cards.length) % cards.length; // vai pro último se estiver no 0
   updateCarousel();
 });
-

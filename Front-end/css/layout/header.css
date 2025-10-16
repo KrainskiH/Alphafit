@@ -7,21 +7,30 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
-  transition: padding 1s ease, background 1s ease, box-shadow 1s ease; /* Melhor controle de transições */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  transition: padding 1s ease, background 1s ease, box-shadow 1s ease;
   border-bottom: 2px solid #ff0000;
   min-height: 70px;}
 
 header.scrolled {
-  padding:10px;}
+  padding: 10px; /* Leve diminuição de padding quando a página rola */}
 
-header.scrolled .logo{
-  text-shadow: 0 0 4px #ff0000;
-  transition: font-size 1s ease, text-shadow 1s ease;}
+header .logo {
+  transition: transform 1s ease, font-size 1s ease, text-shadow 1s ease;}
+
+header.scrolled .logo {
+  transform: scale(1); /* Reduz o tamanho do logo */
+  text-shadow: 0 0 4px #ff0000;}
 
 header.scrolled #TITULO {
-  transform: scale(1);
+  transform: scale(1); /* Evita deformação do TÍTULO */
   transition: color 1s ease, transform 1s ease;}
+
+header .logo h1, p {
+  transition: font-size 1s ease;}
+
+header.scrolled .logo h1, p {
+  font-size: 1.2rem; /* Tamanho menor do título quando a página rola */}
 
 #TITULO{
   color:#ff0000;}
@@ -68,6 +77,8 @@ header:hover h1 {
 header:hover::after {
   opacity: 1;
   box-shadow: 0 0 15px #ff0000;}
+
+
 
 /* MENU FIXO DESKTOP */
 .main-nav ul {
